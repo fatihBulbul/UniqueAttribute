@@ -1,0 +1,40 @@
+﻿@model UniqueAttribute.Models.TestModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>TestModel</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.SomeThing)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.SomeThing)
+                @Html.ValidationMessageFor(model => model.SomeThing)
+            </div>
+    
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
