@@ -14,7 +14,7 @@ namespace UniqueAttribute.Models
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
-
+//test
         }
 
         public DbSet<TestModel> test { get; set; }
