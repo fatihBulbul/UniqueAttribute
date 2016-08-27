@@ -6,7 +6,7 @@ Dynamic linq
 Nuget PM> Install-Package System.Linq.Dynamic
 
 #Usage for directly
-```
+```c#
     [Table("TestModels")]
     public class TestModel
     {
