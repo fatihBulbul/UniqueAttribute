@@ -21,7 +21,7 @@ Nuget PM> Install-Package System.Linq.Dynamic
 ```
 
 #Usage for ViewModel
-```
+```c#
    public class TestViewModel
     {
         public int Id { get; set; }
@@ -35,7 +35,7 @@ Nuget PM> Install-Package System.Linq.Dynamic
 
 
 #Source Code
-```
+```c#
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
